@@ -1,0 +1,42 @@
+from pandas.tseries.offsets import CustomBusinessDay
+from pandas.tseries.holiday import AbstractHolidayCalendar, nearest_workday, Holiday
+
+class PhildayCalendar(AbstractHolidayCalendar):
+
+     rules = [
+	      Holiday('Philippine Holiday', month=2, day=12, #observance=nearest_workday)
+             ]
+
+philHoliday = CustomBusinessDay(calendar=philHoliday) #weelmask='Mon,Thu,Wed,Fri', holidays=['2026-7-12']
+
+#Pwede na ma apply sa date_range() function na e alisin ang holiday na ito 
+
+#Philippine Holiday 2026
+from pandas.tseries.offsets import CustomBusinessDay
+from pandas.tseries.holiday import AbstractHolidayCalendar, Holiday
+
+class PhilDayCalendar(AbstractHolidayCalendar):
+    rules = [
+        Holiday("New Year's Day", month=1, day=1),
+        Holiday("Chinese New Year", month=2, day=17),
+        Holiday("EDSA Revolution Anniversary", month=2, day=25),
+        Holiday("Eidul Fitr", month=3, day=21),
+        Holiday("Maundy Thursday", month=4, day=2),
+        Holiday("Good Friday", month=4, day=3),
+        Holiday("Black Saturday", month=4, day=4),
+        Holiday("Day of Valor", month=4, day=9),
+        Holiday("Labor Day", month=5, day=1),
+        Holiday("Eidul Adha", month=5, day=27),
+        Holiday("Independence Day", month=6, day=12),
+        Holiday("Ninoy Aquino Day", month=8, day=21),
+        Holiday("National Heroes Day", month=8, day=31),
+        Holiday("All Saints' Day", month=11, day=1),
+        Holiday("All Souls' Day", month=11, day=2),
+        Holiday("Bonifacio Day", month=11, day=30),
+        Holiday("Immaculate Conception", month=12, day=8),
+        Holiday("Christmas Holiday", month=12, day=24),
+        Holiday("Christmas Day", month=12, day=25),
+        Holiday("Rizal Day", month=12, day=30),
+        Holiday("New Year Holiday", month=12, day=31),
+    ]
+philHoliday = CustomBusinessDay(calendar=PhilDayCalendar())
