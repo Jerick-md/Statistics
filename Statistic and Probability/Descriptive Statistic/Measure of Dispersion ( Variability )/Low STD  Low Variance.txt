@@ -1,0 +1,49 @@
+Low STD / Low Variance
+
+👉 Magkakalapit ang data sa average.
+
+Effect:
+Mas consistent ang data.
+Mas predictable ang values.
+Mas stable ang proseso o performance.
+Example: Exam Scores
+78, 79, 80, 81, 82
+Mean = 80
+STD = Mababa
+
+Interpretation:
+
+Halos pare-pareho ang performance ng mga estudyante.
+
+Example: Business
+
+Kung ang daily sales ay:
+
+1000, 1010, 995, 1005, 1000
+
+Ibig sabihin, stable ang benta araw-araw.
+
+High STD / High Variance
+
+👉 Malalayo ang data sa average.
+
+Effect:
+Mas hindi consistent ang data.
+Mas mahirap i-predict.
+Mas mataas ang variability o risk.
+Example: Exam Scores
+40, 60, 80, 95, 100
+Mean = 75
+STD = Mataas
+
+Interpretation:
+
+Malaki ang pagkakaiba ng performance ng mga estudyante.
+
+Example: Business
+
+Kung ang daily sales ay:
+
+100, 5000, 300, 7000, 200
+
+Ibig sabihin, pabago-bago ang benta at mahirap hulaan ang susunod na sales.
